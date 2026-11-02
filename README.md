@@ -165,4 +165,4 @@ pyinstaller -F pyD50_cli.py
 
 ## License
 
-Apache 2.0. See [LICENSE.txt](LICENSE.txt).
+MIT. See [LICENSE.txt](LICENSE.txt).
