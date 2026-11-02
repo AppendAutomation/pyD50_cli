@@ -46,7 +46,7 @@ from pyd50 import d50_address
 from pyd50.d50_comm import is_serial_device
 from pyd50.d50_response import Response
 
-version = "0.1.0"
+version = "0.2.0"
 comm = PLC()
 output_format = "raw"
 output_formats = ["raw", "readable", "minimal"]
@@ -619,6 +619,8 @@ def getHelp(args):
                                     - Reads a tag, e.g. Read W0, Read R015.05, Read W4 REAL,
                                       Read W10 20.  Types: WORD (default), INT, DWORD, DINT,
                                       REAL, LREAL.  Bits read as True/False.
+                                      Timers/counters: T100.PV (.ACC), T100.SV (.PRE), T100.DN,
+                                      or T100 for all three; C<n> for counters.
         Write <tag> <value>[,<value>...] [<type>]
                                     - Writes a tag, e.g. Write W0 1234, Write M031.15 1,
                                       Write W4 1.5 REAL, Write W10 1,2,3.

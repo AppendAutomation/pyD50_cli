@@ -38,6 +38,14 @@ pyD50_cli 100.100.100.254 Read W0
 W0 1234 Success
 ```
 
+Timers and counters:
+```
+pyD50_cli 100.100.100.254 Read T100
+T100 {'PV': 6, 'SV': 10, 'DN': False} Success
+pyD50_cli 100.100.100.254 Read T100.PV
+T100.PV 6 Success
+```
+
 Console:
 ```
 pyD50_cli 100.100.100.254
@@ -92,7 +100,8 @@ the program is written and then returned to its previous mode. Add `run` or
     PLC Commands:
         Read <tag> [<count>] [<type>]
                                     - Reads a tag, e.g. Read W0, Read R015.05, Read W4 REAL,
-                                      Read W10 20.
+                                      Read W10 20.  Timers/counters: T100.PV, T100.SV,
+                                      T100.DN, or T100 for all three.
         Write <tag> <value>[,<value>...] [<type>]
                                     - Writes a tag, e.g. Write W0 1234, Write M031.15 1,
                                       Write W4 1.5 REAL, Write W10 1,2,3.
