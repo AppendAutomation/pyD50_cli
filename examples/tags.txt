@@ -1,0 +1,7 @@
+# one tag per line: tag [count] [datatype]
+W0
+W2 DWORD
+W4 REAL
+M031.15
+TC019 4
+SR0 5

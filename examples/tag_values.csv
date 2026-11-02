@@ -1,0 +1,5 @@
+# tag, value[, datatype]
+W0, 1234
+W2, 100000, DWORD
+W4, 1.5, REAL
+M031.15, 1

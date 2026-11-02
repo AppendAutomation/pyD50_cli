@@ -1,0 +1,5 @@
+# put the example values back to zero
+W0, 0
+W2, 0, DWORD
+W4, 0, REAL
+M031.15, 0

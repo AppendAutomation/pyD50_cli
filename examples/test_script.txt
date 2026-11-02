@@ -1,0 +1,12 @@
+# Example pyD50_cli script.  Run with:
+#     pyD50_cli RunScript examples/test_script.txt
+# or from the console after setting a target.
+IPAddress 100.100.100.254
+Output readable
+GetDeviceProperties
+GetPLCMode
+WriteTagFile examples/tag_values.csv
+ReadTagFile examples/tags.txt
+Wait W0 == 1234 echo=n timeout=5
+WriteTagFile examples/reset_values.csv
+ReadTagFile examples/tags.txt
