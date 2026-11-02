@@ -46,7 +46,7 @@ from pyd50 import d50_address
 from pyd50.d50_comm import is_serial_device
 from pyd50.d50_response import Response
 
-version = "0.2.0"
+version = "1.0.0"
 comm = PLC()
 output_format = "raw"
 output_formats = ["raw", "readable", "minimal"]
